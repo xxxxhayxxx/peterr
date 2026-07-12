@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>$PETER | Never Grow Up. Just Grow Your Bags.</title>
+<meta name="description" content="$PETER - Neverland meets Crypto. Growing up is a trap, let's fly to the moon." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background layers -->
+<div class="bg-sky"></div>
+<div class="stars"></div>
+<div class="stars stars2"></div>
+<canvas id="pixie-canvas"></canvas>
+<div class="moon-glow"></div>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-icon">✦</span> $PETER
+    </a>
+    <div class="nav-links">
+      <a href="#legend">Legend</a>
+      <a href="#features">Lore</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Map</a>
+      <a href="#socials">Socials</a>
+      <a href="#footer">Neverland Squad</a>
+    </div>
+    <a href="#hero" class="btn btn-nav">Buy Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="hero">
+  <div class="floating-shape shape1"></div>
+  <div class="floating-shape shape2"></div>
+  <div class="floating-shape shape3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="pill-badge">
+        <span class="dot"></span> Fairy dust loaded on Robinhood
+      </div>
+      <h1 class="hero-title">
+        NEVER GROW UP.<br>
+        <span class="gold-shimmer">JUST GROW YOUR BAGS.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Leaving the boring adult financial system behind. Welcome to Neverland,
+        where the charts only fly up.
+      </p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">
+          <span class="btn-glow"></span>
+          🚀 Buy $PETER
+        </a>
+        <a href="#" class="btn btn-outline">
+          📈 View Chart
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-item"><strong>Weekly</strong><span>Airdrops to All</span></div>
+        <div class="trust-item"><strong>100%</strong><span>Liquidity Burned</span></div>
+        <div class="trust-item"><strong>LFG</strong><span>Ownership Renounced</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card-wrap">
+      <div class="floating-card">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="card-token">
+            <div class="token-icon">🧚</div>
+            <div>
+              <div class="token-name">$PETER</div>
+              <div class="token-chain">on Robinhood</div>
+            </div>
+          </div>
+          <div class="live-badge"><span class="pulse"></span>LIVE</div>
+        </div>
+
+        <div class="price-block">
+          <div class="price-label">Current Price</div>
+          <div class="price-value" id="priceValue">$0.000042</div>
+          <div class="price-change" id="priceChange">▲ 42.0%</div>
+        </div>
+
+        <div class="ca-block">
+          <div class="ca-label">Contract Address</div>
+          <div class="ca-row">
+            <span class="ca-address" id="caAddress">Neve...r1and69Fairy420Moon</span>
+            <button class="copy-btn" id="copyBtn" onclick="copyCA()">
+              <span class="copy-icon">📋</span>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+          <div class="copy-success" id="copySuccess">✨ Pixie dust copied to clipboard!</div>
+        </div>
+      </div>
+      <div class="sparkle sparkle1">✦</div>
+      <div class="sparkle sparkle2">✧</div>
+      <div class="sparkle sparkle3">✦</div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to Neverland</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</header>
+
+<!-- LEGEND / STORY -->
+<section id="legend" class="legend">
+  <div class="section-heading">
+    <div class="pill-badge">The Legend</div>
+    <h2>The Robin Hood of Neverland</h2>
+    <p>Every meme coin has a chart. Only one has a legend.</p>
+  </div>
+
+  <div class="legend-wrap">
+    <div class="legend-story">
+      <p class="legend-drop">
+        <span class="legend-cap">O</span>nce upon a time, in a forest that refused to grow old,
+        there lived a boy who never aged a single day — and never let his friends grow old either.
+      </p>
+      <p>
+        They called him <strong>Peter Pan</strong>. But the Lost Boys who followed him into the trees
+        gave him a title fit for legend: <em>Captain Peter, Savior of the Robinhood Network.</em>
+      </p>
+      <p>
+        Just like the archer of Sherwood, Captain Peter never let the rich get richer while the rest of the
+        forest starved. Every time a Captain Hook — a whale, a bear, a suit dressed up as a "trader" —
+        tried to dump on the little folk and sail off into the sunset with the treasure, Captain Peter would
+        swoop in, dust in hand, and slip a small toll straight from their pockets.
+      </p>
+      <p>
+        That gold doesn't disappear into some corporate vault. It doesn't buy Hook a new ship.
+        Every single week, Captain Peter flies over the Robinhood Network and drops it back down — to
+        <strong>every wallet</strong>, <strong>every Lost Boy</strong>, <strong>every believer</strong>
+        who never grew up and never gave up.
+      </p>
+      <p class="legend-tagline">
+        Steal from the suits. Give to the believers. Never grow up. Never stop flying.
+      </p>
+    </div>
+
+    <div class="legend-mechanism">
+      <div class="mech-card">
+        <div class="mech-icon">🏹</div>
+        <div class="mech-step">Step 1</div>
+        <h4>Rob the Suits</h4>
+        <p>A small toll on every sell — Peter's arrow, aimed straight at the whales
+          and paper-handed bears trying to sneak out the back.</p>
+      </div>
+
+      <div class="mech-arrow">➜</div>
+
+      <div class="mech-card">
+        <div class="mech-icon">💰</div>
+        <div class="mech-step">Step 2</div>
+        <h4>Fill the Treehouse Vault</h4>
+        <p>Every coin collected lands safely in the <strong>Merry Men Vault</strong> — no corporate
+          hands, no rug pulls, just pixie dust waiting to be shared.</p>
+      </div>
+
+      <div class="mech-arrow">➜</div>
+
+      <div class="mech-card">
+        <div class="mech-icon">🪂</div>
+        <div class="mech-step">Step 3</div>
+        <h4>Give to the Lost Boys</h4>
+        <p><strong>Every single week</strong>, the vault empties out — automatically airdropped to
+          every holder's wallet. No claiming, no catch. Just believe, and it rains gold.</p>
+      </div>
+    </div>
+
+    <div class="legend-badge-row">
+      <div class="legend-badge">
+        <span class="legend-badge-icon">🎯</span>
+        <div>
+          <strong>Fly In Free</strong>
+          <span>No tax on buys</span>
+        </div>
+      </div>
+      <div class="legend-badge">
+        <span class="legend-badge-icon">🪂</span>
+        <div>
+          <strong>Weekly Airdrops</strong>
+          <span>To every wallet, automatically</span>
+        </div>
+      </div>
+      <div class="legend-badge">
+        <span class="legend-badge-icon">🌲</span>
+        <div>
+          <strong>100% Community</strong>
+          <span>No suits, no VCs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <div class="section-heading">
+    <div class="pill-badge">The Lore</div>
+    <h2>Why $PETER Never Lands</h2>
+    <p>Three magical pillars holding up the entire Neverland economy.</p>
+  </div>
+
+  <div class="feature-grid">
+    <div class="glass-card" style="--delay:0s">
+      <div class="card-icon-wrap"><span class="card-icon">💰</span></div>
+      <h3>Pixie Dust Tokenomics</h3>
+      <p>Every sell quietly funds the weekly airdrop vault — shared right back with every holder. Liquidity burned forever, no rug pulls, no nonsense.</p>
+      <div class="card-tags">
+        <span class="tag">Weekly Airdrops</span>
+        <span class="tag">LP Burned</span>
+      </div>
+    </div>
+
+    <div class="glass-card" style="--delay:.15s">
+      <div class="card-icon-wrap"><span class="card-icon">⚔️</span></div>
+      <h3>The Lost Boys Army</h3>
+      <p>100% community-driven. No VCs, no corporate suits, no boardrooms — just Lost Boys building in the treehouse.</p>
+      <div class="card-tags">
+        <span class="tag">100% Community</span>
+        <span class="tag">No VC</span>
+      </div>
+    </div>
+
+    <div class="glass-card" style="--delay:.3s">
+      <div class="card-icon-wrap"><span class="card-icon">🏴‍☠️</span></div>
+      <h3>Captain Hook's Nightmare</h3>
+      <p>Engineered mechanics designed to make the whales and bears walk the plank. Diamond hands only, matey.</p>
+      <div class="card-tags">
+        <span class="tag">Anti-Whale</span>
+        <span class="tag">Diamond Hands</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOKENOMICS -->
+<section id="tokenomics" class="tokenomics">
+  <div class="section-heading">
+    <div class="pill-badge">The Treasury</div>
+    <h2>Pixie Dust Supply</h2>
+    <p>No hidden treehouses. No suits with a cut. Just pure, fair fairy dust for the whole forest.</p>
+  </div>
+
+  <div class="token-stats">
+    <div class="token-stat">
+      <div class="token-stat-value">1,000,000,000</div>
+      <div class="token-stat-label">Total Supply</div>
+    </div>
+    <div class="token-stat">
+      <div class="token-stat-value">0%</div>
+      <div class="token-stat-label">Team Allocation</div>
+    </div>
+    <div class="token-stat">
+      <div class="token-stat-value">90%</div>
+      <div class="token-stat-label">Liquidity Locked & Burned</div>
+    </div>
+    <div class="token-stat">
+      <div class="token-stat-value">10%</div>
+      <div class="token-stat-label">Merry Men Vault</div>
+    </div>
+  </div>
+
+  <div class="tokenomics-list">
+    <div class="token-item">
+      <div class="token-item-icon">🪙</div>
+      <div class="token-item-text">
+        <h4>1,000,000,000 $PETER — Fixed Forever</h4>
+        <p>The entire fairy dust supply, minted once. Not a coin more, not a coin less. No hidden mint function, no surprise inflation.</p>
+      </div>
+    </div>
+
+    <div class="token-item">
+      <div class="token-item-icon">🚫</div>
+      <div class="token-item-text">
+        <h4>0% Team Allocation</h4>
+        <p>No suits. No VCs. No secret treehouse stash for the founders. Captain Peter doesn't pay himself — he flies for free.</p>
+      </div>
+    </div>
+
+    <div class="token-item">
+      <div class="token-item-icon">🔒</div>
+      <div class="token-item-text">
+        <h4>90% Liquidity — Locked & Burned</h4>
+        <p>The key to the vault was thrown into the sea. Forever. No rug, no rescue, no "just this once" — liquidity is gone for good.</p>
+      </div>
+    </div>
+
+    <div class="token-item">
+      <div class="token-item-icon">🎁</div>
+      <div class="token-item-text">
+        <h4>10% Merry Men Vault</h4>
+        <p>Reserved purely for the Lost Boys. This is your fuel for the weekly airdrop magic — never touched by founders, never sold on you.</p>
+      </div>
+    </div>
+
+    <div class="token-item">
+      <div class="token-item-icon">🏹</div>
+      <div class="token-item-text">
+        <h4>A Small Toll on Sells</h4>
+        <p>Captain Peter's arrow takes a small toll from every sell — straight into the vault, straight back to you. Never to the founders.</p>
+      </div>
+    </div>
+
+    <div class="token-item">
+      <div class="token-item-icon">✅</div>
+      <div class="token-item-text">
+        <h4>Ownership Renounced</h4>
+        <p>Nobody holds the keys. Not us, not Hook, not anyone. Once it flies, $PETER belongs to Neverland alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+
+<section id="roadmap" class="roadmap">
+  <div class="section-heading">
+    <div class="pill-badge">The Journey</div>
+    <h2>Treasure Map to the Moon</h2>
+    <p>Follow the dotted trail from Neverland all the way past the second star to the right.</p>
+  </div>
+
+  <div class="map-wrap">
+    <svg class="map-path" viewBox="0 0 1000 260" preserveAspectRatio="none">
+      <path d="M20,220 C 180,50 280,300 420,150 S 700,20 820,140 S 950,60 980,40"
+        fill="none" stroke="url(#pathGradient)" stroke-width="4" stroke-dasharray="14 14" />
+      <defs>
+        <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#FFD700"/>
+          <stop offset="50%" stop-color="#2ecc71"/>
+          <stop offset="100%" stop-color="#FFD700"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="map-points">
+      <div class="map-point" style="--pos:0%;">
+        <div class="point-icon">🧚</div>
+        <div class="point-card">
+          <span class="point-step">Step I</span>
+          <h4>Landing on Neverland</h4>
+          <p>Launch on the Robinhood Network. No presale suits allowed, just pure pixie dust.</p>
+        </div>
+      </div>
+      <div class="map-point" style="--pos:33%;">
+        <div class="point-icon">🏝️</div>
+        <div class="point-card">
+          <span class="point-step">Step II</span>
+          <h4>Island-Wide Recognition</h4>
+          <p>CoinGecko + CoinMarketCap listings. Website & socials go live island-wide.</p>
+        </div>
+      </div>
+      <div class="map-point" style="--pos:66%;">
+        <div class="point-icon">🏴‍☠️</div>
+        <div class="point-card">
+          <span class="point-step">Step III</span>
+          <h4>Battle vs Captain Hook</h4>
+          <p>CEX listings, viral raids, and the Lost Boys Army swelling to 10,000 strong.</p>
+        </div>
+      </div>
+      <div class="map-point" style="--pos:100%;">
+        <div class="point-icon">🌕</div>
+        <div class="point-card">
+          <span class="point-step">Step IV</span>
+          <h4>Second Star to the Right</h4>
+          <p>Straight on till morning — and straight on to the moon. No landing gear needed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIALS -->
+<section id="socials" class="socials">
+  <div class="section-heading">
+    <div class="pill-badge">Join the Squad</div>
+    <h2>Find Us in Neverland</h2>
+    <p>No corporate press releases. Just the Lost Boys, live and unfiltered.</p>
+  </div>
+
+  <div class="socials-grid">
+    <a href="#" class="social-card social-card-tg" aria-label="Telegram">
+      <span class="social-card-icon"><svg viewBox="0 0 240 240" width="28" height="28" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="120" r="120" fill="#229ED9"/><path fill="#fff" d="M53.3 118.5c46.6-20.3 77.7-33.7 93.3-40.1c44.4-18.5 53.7-21.7 59.7-21.8c1.3 0 4.3.3 6.2 1.9c1.6 1.3 2.1 3.1 2.3 4.4c.2 1.3.5 4.1.3 6.4c-2.6 27.3-13.8 93.5-19.5 124.1c-2.4 12.9-7.2 17.3-11.8 17.7c-10 .9-17.6-6.6-27.3-13c-15.2-9.9-23.7-16.1-38.4-25.8c-17-11.2-6-17.3 3.7-27.4c2.5-2.6 46-42.2 46.9-45.7c.1-.5.2-2.1-.8-3c-.9-.9-2.3-.6-3.3-.3c-1.4.3-24 15.3-67.7 44.9c-6.4 4.4-12.2 6.6-17.4 6.5c-5.7-.1-16.7-3.2-24.9-5.9c-10-3.3-18-5-17.3-10.6c.4-2.9 4.4-5.9 12-8.9z"/></svg></span>
+      <div class="social-card-text">
+        <strong>Telegram</strong>
+        <span>Join the treehouse chat</span>
+      </div>
+      <span class="social-card-arrow">→</span>
+    </a>
+    <a href="#" class="social-card social-card-x" aria-label="X">
+      <span class="social-card-icon">𝕏</span>
+      <div class="social-card-text">
+        <strong>X</strong>
+        <span>Follow the flight logs</span>
+      </div>
+      <span class="social-card-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-icon">✦</span> $PETER</div>
+      <p>Growing up is a trap. Let's fly to the moon together.</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#" class="social-btn tg" aria-label="Telegram">
+        <span class="social-icon"><svg viewBox="0 0 240 240" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><circle cx="120" cy="120" r="120" fill="#229ED9"/><path fill="#fff" d="M53.3 118.5c46.6-20.3 77.7-33.7 93.3-40.1c44.4-18.5 53.7-21.7 59.7-21.8c1.3 0 4.3.3 6.2 1.9c1.6 1.3 2.1 3.1 2.3 4.4c.2 1.3.5 4.1.3 6.4c-2.6 27.3-13.8 93.5-19.5 124.1c-2.4 12.9-7.2 17.3-11.8 17.7c-10 .9-17.6-6.6-27.3-13c-15.2-9.9-23.7-16.1-38.4-25.8c-17-11.2-6-17.3 3.7-27.4c2.5-2.6 46-42.2 46.9-45.7c.1-.5.2-2.1-.8-3c-.9-.9-2.3-.6-3.3-.3c-1.4.3-24 15.3-67.7 44.9c-6.4 4.4-12.2 6.6-17.4 6.5c-5.7-.1-16.7-3.2-24.9-5.9c-10-3.3-18-5-17.3-10.6c.4-2.9 4.4-5.9 12-8.9z"/></svg></span> Telegram
+      </a>
+      <a href="#" class="social-btn x" aria-label="X">
+        <span class="social-icon">𝕏</span> X
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-disclaimer">
+    <p>⚠️ $PETER is a meme coin created purely for entertainment purposes. Don't risk your actual fairy dust —
+      or your rent money. Not financial advice. Not Neverland-verified. DYOR before you fly.</p>
+    <p class="copyright">© 2024 $PETER — Second star to the right, straight on till moon.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
