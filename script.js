@@ -161,3 +161,5 @@ function copyCA() {
     } else {
       nav.style.boxShadow = 'none';
     }
+  });
+})();
