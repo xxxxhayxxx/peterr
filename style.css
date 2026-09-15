@@ -465,6 +465,40 @@ ul { list-style: none; }
   animation: blink 1s infinite;
 }
 
+/* ---- Coming Soon state ---- */
+.soon-badge {
+  color: var(--gold);
+  background: rgba(255, 215, 0, 0.12);
+  border-color: rgba(255, 215, 0, 0.35);
+}
+.soon-badge .pulse {
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+.soon-text {
+  font-size: 1.5rem !important;
+  background: linear-gradient(90deg, #FFD700, #fff6c8, #FFD700);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+.soon-subtext {
+  color: var(--text-muted) !important;
+  font-weight: 500 !important;
+}
+.copy-btn-disabled {
+  background: rgba(255,255,255,0.08) !important;
+  color: var(--text-muted) !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+}
+.copy-btn-disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
 .price-block { margin-bottom: 18px; }
 .price-label {
   font-size: 12px;
