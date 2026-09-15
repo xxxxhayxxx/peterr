@@ -7,6 +7,7 @@ const FAKE_CA = "Neve1r1and69Fairy420MoonPumpxYZPk";
 
 function copyCA() {
   const btn = document.getElementById('copyBtn');
+  if (!btn || btn.disabled) return; // CA not live yet — copy disabled
   const success = document.getElementById('copySuccess');
   const copyTextEl = btn.querySelector('.copy-text');
 
@@ -45,26 +46,27 @@ function copyCA() {
 }
 
 // ---------- Fake live price ticker ----------
-(function priceTicker() {
-  const priceEl = document.getElementById('priceValue');
-  const changeEl = document.getElementById('priceChange');
-  if (!priceEl) return;
-
-  let base = 0.000042;
-
-  function tick() {
-    const wobble = (Math.random() - 0.42) * 0.000004;
-    base = Math.max(0.000010, base + wobble);
-    priceEl.textContent = '$' + base.toFixed(6);
-
-    const changeVal = ((base - 0.000042) / 0.000042) * 100;
-    const up = changeVal >= 0;
-    changeEl.textContent = (up ? '▲ ' : '▼ ') + Math.abs(changeVal).toFixed(1) + '%';
-    changeEl.style.color = up ? '#2ecc71' : '#ff5c5c';
-  }
-
-  setInterval(tick, 2200);
-})();
+// Disabled: token has not launched yet. Card shows a static "Coming Soon" state instead.
+// (function priceTicker() {
+//   const priceEl = document.getElementById('priceValue');
+//   const changeEl = document.getElementById('priceChange');
+//   if (!priceEl) return;
+//
+//   let base = 0.000042;
+//
+//   function tick() {
+//     const wobble = (Math.random() - 0.42) * 0.000004;
+//     base = Math.max(0.000010, base + wobble);
+//     priceEl.textContent = '$' + base.toFixed(6);
+//
+//     const changeVal = ((base - 0.000042) / 0.000042) * 100;
+//     const up = changeVal >= 0;
+//     changeEl.textContent = (up ? '▲ ' : '▼ ') + Math.abs(changeVal).toFixed(1) + '%';
+//     changeEl.style.color = up ? '#2ecc71' : '#ff5c5c';
+//   }
+//
+//   setInterval(tick, 2200);
+// })();
 
 // ---------- Pixie dust particle canvas ----------
 (function pixieDust() {
@@ -159,5 +161,3 @@ function copyCA() {
     } else {
       nav.style.boxShadow = 'none';
     }
-  });
-})();
